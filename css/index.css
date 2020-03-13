@@ -5,7 +5,9 @@ body{
   background-color: white;
 }
 
-
+main{
+  text-align: center;
+}
 .topbar{
   position: fixed;
   background-color: black;
@@ -68,7 +70,7 @@ body{
 /*tech pic*/
 .techpic{
   border-image: (rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-  width: 100%;
+  width: auto;
   height: 500px;
   border-radius: 8px;
   margin-top: 10em;
@@ -81,7 +83,7 @@ body{
   text-align: center;
   position: relative;
   bottom: 7em;
-  color: white;
+  color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -125,6 +127,7 @@ body{
 
 .listofAI{
   list-style-type: upper-roman;
+  text-align: left;
 }
 
 /*machine content*/
@@ -143,12 +146,41 @@ body{
   font-size: 1.2em;
 }
 
+.content4{
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
+.content5{
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
 
+
+/*ai picture*/
 .ai-pic{
+  border-radius: 8px;
   width: auto;
   height: 250px;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
+.virtualpic{
+  width: auto;
+  height: 300px;
+}
+.arpic{
+  width: auto;
+  height: 300px;
+}
+
+
+
+
+
   /*footer*/
   .ending{
     margin-top: 8em;
