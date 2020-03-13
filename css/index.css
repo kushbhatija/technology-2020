@@ -146,6 +146,7 @@ body{
 
 .listofAI{
   list-style-type: upper-roman;
+  text-align: left;
 }
 
 /*machine content*/
