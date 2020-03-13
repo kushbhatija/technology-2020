@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+
+body{
+  background-color: white;
+}
+
+
+.topbar{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 4em;
+  padding: 15px;
+  display: grid;
+  grid-template-columns:  0.5fr 1.5fr 1fr ;
+  grid-template-areas:  "heading logoo nav";
+  top: 0;
+  left:0;
+  z-index: 999;
+}
+
+/*logopic*/
+.logo{
+  grid: logoo;
+  margin-bottom: 25px;
+}
+.logopic{
+  height: 75px;
+  width: auto;
+}
+
+/*heading*/
+
+.heading{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*nav bar*/
+.navigationbar{
+  grid:nav;
+  text-align: right;
+  margin-right: 1.5em;
+}
+.bar-items{
+  color: white;
+  list-style-type: none;
+}
+.item1{
+  display: inline;
+  padding-right: 1.5em;
+  font-size: 1.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.items{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+/*tech pic*/
+.techpic{
+  border-image: (rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  margin-top: 10em;
+ 
+}
+
+/* heading on the pic*/
+.subheading{
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  bottom: 7em;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*div menu with 10items*/
+.tech-menu{
+  width: 100%;
+  height: 3em;
+  color: white;
+  background-color:black;
+  border-radius: 8px;
+  padding-top: 20px;
+  margin-bottom: 7em;
+}
+.tech-list{
+  display: inline;
+  padding-top: 100px;
+  
+}
+.techItem{
+  display: inline;
+  padding-right: 2em;
+  font-size:1.2em;
+}
+.techItem a{
+  text-decoration: none;
+  color: white;
+}
+.techItem a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/*ai content*/
+.content{
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+.listofAI{
+  list-style-type: upper-roman;
+}
+.content2{
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+  /*footer*/
+  .ending{
+    margin-top: 8em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: black;
+  }
+  
+  .connect{
+    margin-bottom: 15px;
+  }
+  
+  .socialmedia{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    list-style-type: none;
+  }
+  .media:hover{
+    zoom: 1.3;
+    transition-delay: .6ms;
+  }
+  .policies{
+    list-style-type: none;
+    list-style: none;
+    font-family: var(--asap-font);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+  .policy{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 1em;
+   /* border: thin solid white;*/
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+  }
+  .policy:hover{
+    color: var(--links);
+    margin-left: 1em;
+    margin-right: 1em;
+  
+  }
+
+  .copyright{
+    text-align: center;
+    color: white;
+  }
+  
