@@ -126,6 +126,8 @@ body{
 .listofAI{
   list-style-type: upper-roman;
 }
+
+/*machine content*/
 .content2{
   padding-right: 1em;
   padding-left: 1em;
@@ -133,6 +135,20 @@ body{
   font-size: 1.2em;
 }
 
+/*IoT content*/
+.content3{
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+
+.ai-pic{
+  width: auto;
+  height: 250px;
+  text-align: center;
+}
   /*footer*/
   .ending{
     margin-top: 8em;
