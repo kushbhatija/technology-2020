@@ -5,8 +5,9 @@ import url
 body{
   background-color: white;
   text-align: center;
- 
-  
+}
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -89,6 +90,8 @@ body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+
 /*div menu with 10items*/
 .tech-menu{
   
@@ -101,9 +104,13 @@ body{
   margin-bottom: 7em;
   padding-bottom: 40px;
  
-
-
 }
+/*progres bar*/
+.progress-bar{
+  background-color: green;
+  height: 2.5em;
+}
+
 .tech-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -133,9 +140,19 @@ body{
  transition-delay: .10ms;
 }
 
+/*div class tech-menu in js sticks to the top bar */ 
+.sticky{
+  position: fixed;
+  left:0;
+  top: 90px;
+  margin-bottom: 10em;
+}
 
 
-
+/*ai heading gap top*/
+.gap-heading{
+  margin-top: 6em;
+}
 /*ai content*/
 .content{
   padding-right: 1em;
