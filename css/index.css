@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
-import url
+
 
 body{
   background-color: white;
@@ -101,7 +101,7 @@ html{
   background-color:black;
   border-radius: 8px;
   padding-top: 20px;
-  margin-bottom: 7em;
+  margin-bottom: 2em;
   padding-bottom: 40px;
  
 }
@@ -148,14 +148,59 @@ html{
   margin-bottom: 10em;
 }
 
+/*icons next to the picture*/
+.material-icons{
+  color: black;
+  font-size: 100px;
+  padding-left: 10em;
+  cursor: pointer;
+}
+.material-icons:hover{
+  cursor: pointer;
+  color: red;
+}
+.material-icons{
+  padding-left: 10em;
+}
+
+.fa{
+  font-size: 100px;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 10em;
+  color: black;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+.fa-thumbs-down{
+  color: black;
+}
 
 /*ai heading gap top*/
 .gap-heading{
-  margin-top: 6em;
+  margin-top: 2em;
 }
+
+/*grid with picture and icons */
+.grid-for-picandicons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: inline;
+
+}
+.img-icons{
+  display: inline;
+}
+
+ul{
+  list-style-type: none;
+}
+
 /*ai content*/
 .content{
-  padding-right: 1em;
+  padding-right: 12em;
   padding-left: 1em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2em;
@@ -169,7 +214,7 @@ html{
 /*machine content*/
 /*machine content*/
 .content2{
-  padding-right: 1em;
+  padding-right: 12em;
   padding-left: 1em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2em;
@@ -177,20 +222,20 @@ html{
 
 /*IoT content*/
 .content3{
-  padding-right: 1em;
+  padding-right: 12em;
   padding-left: 1em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2em;
 }
 
 .content4{
-  padding-right: 1em;
+  padding-right: 12em;
   padding-left: 1em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2em;
 }
 .content5{
-  padding-right: 1em;
+  padding-right: 12em;
   padding-left: 1em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2em;
@@ -327,6 +372,10 @@ background-color: grey;
       height: 40px;
       width: auto;
     }
+
+
+
+
     .techpic{
    
       width: 300px;
@@ -494,9 +543,6 @@ background-color: grey;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       list-style: none;
       float: none;
-
-   
-     
     
     }
     .ai-pic{
@@ -945,6 +991,5 @@ background-color: grey;
       text-align: center;
       padding-right: 3em;
       padding-left: 3em;
-   
     }
 }

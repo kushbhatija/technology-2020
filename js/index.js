@@ -1,5 +1,8 @@
 let $techmenu= document.querySelector(".tech-menu")
 let $progressbar= document.querySelector(".progress-bar")
+let bookmark= document.querySelector(".material-icons")
+
+
 
 let doc= document.documentElement
 let winH= window.pageYOffset
@@ -35,3 +38,8 @@ $progressbar.style.width= `${percentScrolled * 100}%`
 });
 
 
+
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+  x.style.color="red";
+}
