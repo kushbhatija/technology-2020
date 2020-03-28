@@ -148,7 +148,7 @@ html{
   margin-bottom: 10em;
 }
 
-/*icons next to the picture*/
+/*bookmark icon next to the picture*/
 .material-icons{
   color: black;
   font-size: 100px;
@@ -163,6 +163,7 @@ html{
   padding-left: 10em;
 }
 
+/*thumbs up icon next to the picture*/
 .fa{
   font-size: 100px;
   cursor: pointer;
@@ -174,6 +175,8 @@ html{
 .fa:hover {
   color: darkblue;
 }
+
+/*thumbs down icon class next to the picture*/
 .fa-thumbs-down{
   color: black;
 }
