@@ -187,20 +187,10 @@ html{
   cursor: pointer;
 }
 
-/*bookmark icon next to the picture*/
-.material-icons{
-  color: black;
-  font-size: 100px;
-  padding-left: 10em;
-  cursor: pointer;
-}
-.material-icons:hover{
-  cursor: pointer;
-  color: red;
-}
 
 
-/*thumbs up icon next to the picture*/
+
+/*thumbs up and bookmark icon next to the picture*/
 .fa{
   font-size: 100px;
   cursor: pointer;
@@ -218,6 +208,9 @@ html{
   color: black;
 }
 
+.fa-bookmark{
+  color: red;
+}
 /*ai heading gap top*/
 .gap-heading{
   margin-top: 2em;
@@ -901,6 +894,8 @@ margin-left: 2em;
 }
 
 @media screen and (min-width: 1024px) {
+
+  
   .techItem{
     font-size:  1.7em;
     text-decoration: none;
@@ -987,7 +982,7 @@ margin-left: 2em;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr ;
       margin: 3em;
-    background-color: white;
+      background-color: white;
       border-radius: 6px;
       text-align: center;
       padding-right: 5em;

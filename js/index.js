@@ -1,9 +1,11 @@
 let $techmenu= document.querySelector(".tech-menu")
 let $progressbar= document.querySelector(".progress-bar")
-let bookmark= document.querySelector(".material-icons")
+
+
 let $savedbox= document.querySelector(".saved-box")
 let savebutton= document.getElementById("save-button")
-
+let thumbsup= document.querySelectorAll(".fa-thumbs-up")
+let bookmark= document.querySelectorAll(".fa-bookmark-o")
 
 let doc= document.documentElement
 let winH= doc.clientHeight
@@ -41,18 +43,32 @@ $progressbar.style.width= `${percentScrolled * 100}%`
 
 
 
-function myFunction(thumb) {
-  thumb.classList.toggle("fa-thumbs-down");
-  thumb.style.color="red";
+
+
+for(let i=0; i<thumbsup.length; i++){
+  thumbsup[i].addEventListener('click',event=>{
+    thumbsup[i].classList.toggle("fa-thumbs-down");
+    thumbsup[i].style.color="red";
+    
+})
 }
+
+
+
+for(let i=0; i<bookmark.length; i++){
+  bookmark[i].addEventListener('click',event=>{
+    console.log("saved");
+ 
+    bookmark[i].classList.toggle("fa-bookmark");
+
+    
+})
+}
+
+
+
 
 savebutton.addEventListener('click',event=>{
   $savedbox.classList.toggle("saved-box-hide")
 })
 
-
-bookmark.addEventListener('click', event=>{
-  if(bookmark==="black"){
-    bookmark.style.color="blue";
-  }
-})
