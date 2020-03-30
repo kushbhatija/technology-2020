@@ -107,7 +107,7 @@ html{
 }
 /*progres bar*/
 .progress-bar{
-  background-color: rgb(205, 209, 205);
+  background-color: rgb(26, 43, 196);
   height: 2.5em;
 }
 
@@ -146,6 +146,45 @@ html{
   left:0;
   top: 90px;
   margin-bottom: 10em;
+}
+
+
+/*savedbox left side*/
+.boxleft-side{
+  float: right;
+  margin-right: 50px;
+}
+/*saved div box*/
+.saved-box{
+  margin-top: 20em;
+  background-color: lightgrey;
+  width: 150px;
+  border: 15px solid blue;
+  height: 400px;
+  padding: 20px;
+}
+
+/*class for js */
+.saved-box-hide{
+  display: none;
+}
+
+
+.saved-items{
+  font-size: 1.5em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+}
+
+
+#save-button{
+  margin-top: 24em;
+  float: right;
+  margin-right: 166px;
+}
+#save-button:hover{
+  cursor: pointer;
 }
 
 /*bookmark icon next to the picture*/
@@ -294,8 +333,8 @@ ul{
     text-decoration: none;
   }
   .policy:hover{
-background-color: grey;
- border-radius: 6px;
+    background-color: grey;
+    border-radius: 6px;
   
   
   }
@@ -623,10 +662,34 @@ margin-left: 2em;
   .info{
     text-align: center;
   }
+  .content{
+    text-align: center;
+    padding: 0;
+  }
   
+.content2{
+  text-align: center;
+  padding: 0;
+}
 
+.content3{
+  text-align: center;
+  padding: 0;
+}
+ 
+.content4{
+  text-align: center;
+  padding: 0;
+}
 
-
+.content5{
+  text-align: center;
+  padding: 0;
+}
+.boxleft-side{
+  float: center;
+  text-align: center;
+}
  
     
 
@@ -760,7 +823,7 @@ margin-left: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         margin: 3em;
-      background-color: white;
+        background-color: white;
         border-radius: 6px;
         text-align: center;
         margin-left: 10;
@@ -800,8 +863,39 @@ margin-left: 2em;
          
         }
         .info{
-          text-align: center;
+          text-align: left;
         }
+
+        .content{
+          text-align: left;
+          padding-right:12em;
+        }
+        .content2{
+          text-align: left;
+          padding-right:12em;
+        }
+        .content3{
+          text-align: left;
+          padding-right:12em;
+        }
+        .content4{
+          text-align: left;
+          padding-right:12em;
+
+        }
+        .content5{
+          text-align: left;
+          padding-right:12em;
+        }
+        .listofAI{
+          list-style-type: upper-roman;
+          text-align: left;
+        }
+        .gap-heading{
+          text-align: left;
+        }
+
+      
       
 
 }
@@ -820,34 +914,42 @@ margin-left: 2em;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    .info{
+      text-align: left;
+    }
+
     .content{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content2{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content3{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content4{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content5{
       font-size: 1.5em;
-      text-align: center;
-      
+      text-align: left;
+    
     }
     .policy{
       font-size: 1.5em;
          text-align: center;
+    }
+
+    .listofAI{
+      text-align: left;
     }
 
 
@@ -1004,6 +1106,7 @@ margin-left: 2em;
     .virtualpic{
       width: 750px;
       height: auto;
+      text-align: center;
     }
     .arpic{
       width: 750px;;
@@ -1041,28 +1144,32 @@ margin-left: 2em;
 
     .content{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content2{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content3{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content4{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
     }
     .content5{
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
       
+    }
+
+    .info{
+      text-align: left;
     }
     .impacting{
       font-size: 2.5em;
@@ -1105,7 +1212,10 @@ margin-left: 2em;
     padding-top: 20px;
     margin-bottom: 2em;
     padding-bottom: 40px;
-   
+  }
+
+  .gap-heading{
+    margin-top: 8em;
   }
 }
 
