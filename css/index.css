@@ -176,8 +176,49 @@ html{
   text-align: center;
   margin-right: 25px;
 }
+.saveAI{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
 
-
+.saveML{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
+.saveIOT{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
+.saveRPA{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
+.saveVR{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
+.saveAR{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
 #save-button{
   margin-top: 24em;
   float: right;
@@ -862,23 +903,28 @@ margin-left: 2em;
         .content{
           text-align: left;
           padding-right:12em;
+          margin-left:50px;
         }
         .content2{
           text-align: left;
           padding-right:12em;
+          margin-left:50px;
         }
         .content3{
           text-align: left;
           padding-right:12em;
+          margin-left:50px;
         }
         .content4{
           text-align: left;
           padding-right:12em;
+          margin-left:50px;
 
         }
         .content5{
           text-align: left;
           padding-right:12em;
+          margin-left:50px;
         }
         .listofAI{
           list-style-type: upper-roman;
@@ -916,26 +962,31 @@ margin-left: 2em;
     .content{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content2{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content3{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content4{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content5{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
     
     }
     .policy{
@@ -1140,31 +1191,37 @@ margin-left: 2em;
     .content{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content2{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content3{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content4{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
     .content5{
       font-size: 1.5em;
       text-align: left;
+      margin-left:50px;
       
     }
 
     .info{
       text-align: left;
+      
     }
     .impacting{
       font-size: 2.5em;

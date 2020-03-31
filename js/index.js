@@ -7,6 +7,16 @@ let savebutton= document.getElementById("save-button")
 let thumbsup= document.querySelectorAll(".fa-thumbs-up")
 let bookmark= document.querySelectorAll(".fa-bookmark-o")
 
+let $saveAI= document.querySelector(".saveAI")
+let $saveML= document.querySelector(".saveML")
+let $saveIOT= document.querySelector(".saveIOT")
+let $saveRPA= document.querySelector(".saveRPA")
+let $saveVR= document.querySelector(".saveVR")
+let $saveAR= document.querySelector(".saveAR")
+
+
+
+
 let doc= document.documentElement
 let winH= doc.clientHeight
 let docH= doc.scrollHeight
@@ -56,16 +66,49 @@ for(let i=0; i<thumbsup.length; i++){
 
 
 for(let i=0; i<bookmark.length; i++){
-  bookmark[i].addEventListener('click',event=>{
-    console.log("saved");
- 
-    bookmark[i].classList.toggle("fa-bookmark");
-
-    
+  bookmark[0].addEventListener('click',event=>{
+    if(bookmark[0].style.color="red"){
+      bookmark[0].classList.toggle("fa-bookmark");
+      $saveAI.style.display="block";
+  
+      console.log("saveaiaiai");
+    }
+    else{
+      $saveAI.style.display="none";
+      bookmark[0].style.color="black";
+    }
 })
 }
-
-
+for(let i=0; i<bookmark.length; i++){
+  bookmark[1].addEventListener('click',event=>{
+    bookmark[i].classList.toggle("fa-bookmark");
+    $saveML.style.display="block";
+})
+}
+for(let i=0; i<bookmark.length; i++){
+  bookmark[2].addEventListener('click',event=>{
+    bookmark[i].classList.toggle("fa-bookmark");
+    $saveIOT.style.display="block";
+})
+}
+for(let i=0; i<bookmark.length; i++){
+  bookmark[3].addEventListener('click',event=>{
+    bookmark[i].classList.toggle("fa-bookmark");
+    $saveRPA.style.display="block";
+})
+}
+for(let i=0; i<bookmark.length; i++){
+  bookmark[4].addEventListener('click',event=>{
+    bookmark[i].classList.toggle("fa-bookmark");
+    $saveVR.style.display="block";
+})
+}
+for(let i=0; i<bookmark.length; i++){
+  bookmark[5].addEventListener('click',event=>{
+    bookmark[i].classList.toggle("fa-bookmark");
+    $saveAR.style.display="block";
+})
+}
 
 
 savebutton.addEventListener('click',event=>{
