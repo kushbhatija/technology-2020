@@ -13,5 +13,3 @@ a) The menu bar containing the list of the technologies will contain some dropdo
 
 3. One component or tool of your choosing: 
 There will be a saved and favourite icon on right side bar if the page where the user will able to save the technology and give it a rating.
-
-4. Loading page for the more content.
