@@ -645,10 +645,12 @@ margin-left: 2em;
       left:0;
       z-index: 999;
       float: none;
+      padding-bottom: 2em;
     }
     .logopic{
       height: 40px;
       width: auto;
+      margin-right: 3em;
    
     }
 
@@ -751,7 +753,7 @@ margin-left: 2em;
         font-size: 1.2em;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-left:1.5em ;
+        margin-left:-1em ;
       }
  .gallerypics{
    width: 100px;
@@ -785,7 +787,7 @@ margin-left: 2em;
   width: auto;
   height: 20px;
   padding-left: 4em;
-  margin-left: 1em;
+  margin-left: -4em;
   
   }
 
@@ -923,14 +925,16 @@ text-align: center;
  
 }
 
-
-
-
-
+.space{
+  text-align: left;
 }
- 
 
-    
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -953,6 +957,7 @@ text-align: center;
       left:0;
       z-index: 999;
       float: none;
+      padding-bottom: 2em;
     }
     .logopic{
       height: 55px;
@@ -1684,6 +1689,7 @@ text-align: center;
 
 .heading{
   margin-bottom: 0em;
+  margin-left: 2em;
 
 }
 
@@ -1716,7 +1722,5 @@ text-align: center;
   height: 50px;
 }
 
-
-
-
+}
 }
