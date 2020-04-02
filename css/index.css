@@ -31,10 +31,13 @@ html{
 .logo{
 
   margin-bottom: 25px;
+  width: auto;
+  height: 35px;
 }
 .logopic{
   height: 75px;
   width: auto;
+  margin-right: 2em;
 }
 
 /*heading*/
@@ -645,6 +648,7 @@ margin-left: 2em;
     .logopic{
       height: 40px;
       width: auto;
+   
     }
 
 
@@ -1376,6 +1380,7 @@ text-align: center;
     .logopic{
       height: 75px;
       width: auto;
+      margin-right: 3em;
     }
   
       .techpic{
@@ -1409,7 +1414,7 @@ text-align: center;
      .socialmedia{
      
       display: grid;
-      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr   ;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
       grid-template-rows: 1fr;
       text-align: center;
       list-style-type: none;
