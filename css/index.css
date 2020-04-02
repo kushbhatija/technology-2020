@@ -176,6 +176,7 @@ html{
     padding: 10px;
     box-shadow: 10px  10px rgb(204, 217, 218);
     color: white;
+    margin-bottom: 1em;
 
   
 
@@ -761,7 +762,6 @@ margin-left: 2em;
  .gallery{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   margin: 1em;
    background-color: white;
    border-radius: 6px;
    padding-left: 0.8em;
@@ -838,8 +838,6 @@ margin-left: 2em;
 }
 
 
-
-
 .img1{
   text-align: left;
   height: 100px;
@@ -860,7 +858,7 @@ margin-left: 2em;
 }
 
 .extrainfo{
-  font-size: 1.2;
+  font-size: 1rem;
   margin: 0em;
 }
 
@@ -877,8 +875,8 @@ margin-left: 2em;
 color: black;
 border-radius: 25px;
 margin: 1em;
-margin-left:  2em;
-margin-right: auto;
+margin-left:  0.5em;
+margin-right: 1em;
 font-size: 1.5rem;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 text-align: center;
@@ -891,8 +889,47 @@ text-align: center;
   border-radius: 25px;
 }
 
+.sticky{
+  position: fixed;
+  left:0;
+  top: 90px;
+  margin-bottom: 10em;
+  margin-top: 2rem;
+}
+
+.policy{
+  font-size: 0.8rem;
+}
+
+.policies{
+  display: grid;
+
+}
+.copyright{
+  font-size: 0.8rem;
+}
+.logo{
+  width: auto;
+  height: 25px;
+}
+.progress-bar{
+  background-color: white;
+  height: 1.5em;
+
+}
+.impacting{
+  font-size: 2rem;
+  padding-top: 10rem;
+ 
+}
+
+
+
+
+
 }
  
+
     
 
 @media screen and (min-width: 768px) {
@@ -1028,17 +1065,18 @@ text-align: center;
         background-color: white;
         border-radius: 6px;
         text-align: center;
-        margin-left: 10;
-        padding-left: 4em;
+
+    
      
       }
       .impacting{
         font-size: 2em;
+        padding-top: 3em;
        
       
       }
       .likeandup{
-        font-size: 50px;
+        font-size: 35px;
       }
       .material-icons{
         font-size: 50px;
@@ -1111,21 +1149,24 @@ text-align: center;
 
 .img1{
   text-align: left;
-  height: 200px;
+  height: 100px;
   width: auto;
   margin: 1.1em;
+  margin-left: 3rem;
 }
 .img2{
   text-align: center;
-  height: 200px;
+  height: 100px;
   width: auto;
   margin: 1.1em;
+  margin-left: 3rem;
 }
 .img3{
   text-align: right;
-  height: 200px;
+  height: 100px;
   width: auto;
   margin: 1.1em;
+  margin-left: 3rem;
 }
 
 .extrainfo{
@@ -1146,9 +1187,9 @@ text-align: center;
 color: black;
 border-radius: 25px;
 margin: 1em;
-margin-left:  12em;
+margin-left:  15.5rem;
 margin-right: auto;
-font-size: 1.5rem;
+font-size: 1rem;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 text-align: center;
 }
@@ -1159,11 +1200,23 @@ text-align: center;
   background-color: rgb(84, 167, 173);
   border-radius: 25px;
 }
+.sticky{
+  position: fixed;
+  left:0;
+  top: 90px;
+  margin-bottom: 10em;
+  margin-top: 6rem;
+}
+
+.loadgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 
 
 
 }
-
+}
 @media screen and (min-width: 1024px) {
 
   
@@ -1244,8 +1297,9 @@ text-align: center;
     }
     .impacting{
       font-size: 2em;
+  
+     padding-top: 3rem;
      
-    
     }
 
     .gallerypics{
@@ -1261,14 +1315,14 @@ text-align: center;
       background-color: white;
       border-radius: 6px;
       text-align: center;
-      padding-right: 5em;
+      padding-right: 5rem;
 
     
    
     }
 
     .likeandup{
-      font-size: 75px;
+      font-size: 50px;
     }
     .material-icons{
       font-size: 75px;
@@ -1297,21 +1351,24 @@ text-align: center;
 
       .img1{
         text-align: left;
-        height: 200px;
+        height: 170px;
         width: auto;
         margin: 1.1em;
+        margin-left: 2em;
       }
       .img2{
         text-align: center;
-        height: 200px;
+        height: 170px;
         width: auto;
         margin: 1.1em;
+        margin-left: 2em;
       }
       .img3{
         text-align: right;
-        height: 200px;
+        height: 170px;
         width: auto;
         margin: 1.1em;
+        margin-left: 2em;
       }
       
       .extrainfo{
@@ -1332,7 +1389,7 @@ text-align: center;
       color: black;
       border-radius: 25px;
       margin: 1em;
-      margin-left:  19em;
+      margin-left:  22rem;
       margin-right: auto;
       font-size: 1.5rem;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -1345,8 +1402,26 @@ text-align: center;
         background-color: rgb(84, 167, 173);
         border-radius: 25px;
       }
+
+      /*progres bar*/
+.progress-bar{
+  background-color: white;
+  height: 2.5em;
+}
+
+.sticky{
+  position: fixed;
+  left:0;
+  top: 90px;
+  margin-bottom: 10em;
+  margin-top: 2em;
+}
+
+    
+
+      
   
-  }
+}
 
 
 
@@ -1458,7 +1533,7 @@ text-align: center;
       border-radius: 6px;
       text-align: center;
       padding-right: 3em;
-      padding-left: 7.5em;
+      padding-left: 7.5rem;
 
     
    
@@ -1514,9 +1589,7 @@ text-align: center;
       padding-right: 1.2em;
       font-size: 1.3em;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    
-}
+    }
 
 .likeandup{
   font-size: 75px;
@@ -1556,25 +1629,30 @@ text-align: center;
 
 .img1{
   text-align: left;
-  height: 250px;
+  height: 220px;
   width: auto;
   margin: 1.5em;
+  margin-left: 4em;
 }
 .img2{
   text-align: center;
-  height: 250px;
+  height: 220px;
   width: auto;
   margin: 1.5em;
+  margin-left: 4em;
+
 }
 .img3{
   text-align: right;
-  height: 250px;
+  height: 220px;
   width: auto;
   margin: 1.5em;
+  margin-left: 4em;
+
 }
 
 .extrainfo{
-  font-size: 1.5;
+  font-size: 1.6rem;
   margin: 1.5em;
 }
 
@@ -1591,7 +1669,7 @@ text-align: center;
 color: black;
 border-radius: 25px;
 margin: 1em;
-margin-left:  24em;
+margin-left:  25em;
 font-size: 1.5rem;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 text-align: center;
@@ -1603,5 +1681,42 @@ text-align: center;
   background-color: rgb(84, 167, 173);
   border-radius: 25px;
 }
+
+.heading{
+  margin-bottom: 0em;
+
+}
+
+/*progres bar*/
+.progress-bar{
+  background-color: white;
+  height: 2.5em;
+}
+.sticky{
+  position: fixed;
+  left:0;
+  top: 90px;
+  margin-bottom: 10em;
+  margin-top: 0em;
+}
+
+.policy{
+  font-size: 1.3rem;
+}
+
+.policies{
+  display: grid;
+
+}
+.copyright{
+  font-size: 0.8rem;
+}
+.logo{
+  width: auto;
+  height: 50px;
+}
+
+
+
 
 }
