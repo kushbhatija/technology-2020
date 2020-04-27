@@ -1,3 +1,65 @@
+
+
+let setTheme = (mode) => {
+
+	// Remove both modes
+	document.body.classList.remove('light')
+	document.body.classList.remove('dark')
+
+	// Add the mode requested
+	document.body.classList.add(mode)
+
+	// Store it in the browser for next time
+	window.localStorage.setItem('mode', mode)
+}
+
+// Swap the theme from light to dark, or dark to light, based on what you have set now
+let flipTheme = (event) => {
+
+	// If light, go dark, if dark, go light
+	if (defaultMode == 'light') {
+		defaultMode = 'dark'
+	} else {
+		defaultMode = 'light'
+	}
+
+	// Apply it
+	setTheme(defaultMode)
+}
+
+
+// ***** CODE STARTS RUNNING HERE:
+
+// Check if there's a "mode" variable in local storage, or if not, default to 'light'
+let defaultMode = window.localStorage.getItem('mode') || 'light'
+
+// Apply the theme determined above
+setTheme(defaultMode)
+
+// If you click the button, flip the theme
+document.querySelector('#theme').addEventListener('click', flipTheme)
+
+
+
+// ***** MORE:
+
+// If you wanted to check which theme the user prefers (based on operating system settings)
+// either of these will return true (if its the theme) or false if it's not
+// You could use this to replace "light" as the theme (above)
+let dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+let light = window.matchMedia('(prefers-color-scheme: light)').matches
+
+if (dark) {
+	console.log(`Looks like you're into dark mode`)
+} else if (light) {
+	console.log(`Plain ol' light mode, huh?`)
+}
+
+
+
+
+
+let $savedboxfixed =document.querySelector(".boxleft-side")
 let $techmenu= document.querySelector(".tech-menu")
 let $progressbar= document.querySelector(".progress-bar")
 
@@ -31,6 +93,21 @@ if((window.pageYOffset) >=595){
 }
 else{
   $techmenu.classList.remove('sticky')
+}
+
+
+if((window.pageYOffset) >=1040){
+  $savedboxfixed.classList.add("boxleft-sideFixed")
+}
+else{
+  $savedboxfixed.classList.remove("boxleft-sideFixed")
+}
+
+if((window.pageYOffset) >=12300){
+  $savedboxfixed.style.display="none"
+}
+else{
+  $savedboxfixed.style.display="block"
 }
 
 
@@ -115,7 +192,15 @@ savebutton.addEventListener('click',event=>{
   $savedbox.classList.toggle("saved-box-hide")
 })
 
+
+
+
+
+
+
 let loadContentFromHtmlFile = (event) => {
+
+
 
 	// Put up the loading screen
 	document.querySelector('.loading').classList.add('show')
@@ -131,17 +216,118 @@ let loadContentFromHtmlFile = (event) => {
 
 			// The loadthis.html page has been loaded!
 			// Append the content from the new page into the old page
-			document.querySelector('#content').innerHTML += newDocument.querySelector('#content').innerHTML
+			document.querySelector('#content').innerHTML += newDocument.querySelector('#contentt').innerHTML
 			
 			// Take down the loading screen, we're done
 			document.querySelector('.loading').classList.remove('show')
 		})
 
-		
-
-		
-
 }
 
 document.querySelector('#load').addEventListener('click', loadContentFromHtmlFile)
 
+
+
+
+
+
+let loadContentFromHtmlFile2 = (event) => {
+  let winH = document.documentElement.clientHeight
+  let docH = document.documentElement.scrollHeight
+  let winY = window.scrollY
+  let maxY = docH - winH
+  // Put up the loading screen
+  
+  if (winY >= maxY) {
+    
+
+	fetch('loadthis2.html')
+		.then((response) => {
+			return response.text() // Convert it something readable
+		})
+		.then((html) => {
+
+			let parser = new DOMParser()
+			let newDocument = parser.parseFromString(html, 'text/html')
+
+			// The loadthis.html page has been loaded!
+			// Append the content from the new page into the old page
+			document.querySelector('#content').innerHTML += newDocument.querySelector('#contenttt').innerHTML
+			
+			
+			// Take down the loading screen, we're done
+		
+		})
+
+}
+}
+
+window.addEventListener('scroll',loadContentFromHtmlFile2 )
+
+
+
+
+
+let signBtn=document.querySelector(".signin");
+let closeBtn=document.querySelector(".close");
+let submitBtn=document.querySelector(".submit");
+let inputfield= document.querySelectorAll(".field");
+let username=document.getElementById("user");
+let password=document.getElementById("pass");
+let form= document.querySelector(".getstarted");
+let $modal=document.querySelector(".modal")
+let $commentbtn= document.querySelector(".comment")
+let $commentshow= document.querySelector(".commentshow")
+let $closecomment= document.querySelector(".closecomment")
+
+
+function modalshow(){
+  let openmodal=document.querySelector(".modal");
+  openmodal.style.display="block";
+}
+
+function modalclose(){
+  let closemodal=document.querySelector(".modal");
+  closemodal.style.display="none";
+}
+
+
+function commentshowbox(){
+  $commentshow.style.display="block";
+}
+
+function commenthidebox(){
+  $commentshow.style.display="none";
+}
+
+
+
+function formsubmit(event){
+  form.event.preventdefault();
+}
+
+
+
+
+submitBtn.addEventListener("click",(event)=>{
+  inputfield.classList.add("error");
+})
+
+username.addEventListener("focus",(event)=>{
+  username.classList.remove("error");
+})
+
+password.addEventListener("focus",(event)=>{
+  password.classList.remove("error");
+})
+
+closeBtn.addEventListener('click',modalclose);
+signBtn.addEventListener('click',modalshow);
+
+
+$commentbtn.addEventListener('click',commentshowbox);
+$closecomment.addEventListener('click',commenthidebox);
+
+
+
+form.addEventListener('submit',formsubmit);

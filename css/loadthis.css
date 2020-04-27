@@ -1,0 +1,23 @@
+
+body{
+
+    font-size: 1.3em;
+}
+
+
+img{
+    height: 100px;
+    width: 200px
+
+}
+
+.extra{
+    height: 100px;
+    width: 200px;
+    background-color: hotpink;
+}
+
+#contentt{
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }

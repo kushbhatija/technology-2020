@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>2020 technology</title>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/loadthis.css">
+  <link rel="stylesheet" href="loadthis.html">
+  <link rel="stylesheet" href="loadthis2.html">
 
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -38,15 +40,17 @@
     
    
     <h1 class="impacting">6 TECHNOLOGIES IMPACTING OUR LIVES</h1>
+    <button id="theme" class="theme">Dark or light theme</button>
 
-    <section class="gallery">
-      <img class="gallerypics" src="img/7.png" alt="tech">
-      <img class="gallerypics" src="img/1.png" alt="tech">
-      <img class="gallerypics" src="img/3.png" alt="tech">
-      <img class="gallerypics" src="img/8.png" alt="tech">
-      <img class="gallerypics" src="img/5.png" alt="tech">
-      <img class="gallerypics" src="img/6.png" alt="tech">
-    </section>
+      <section class="gallery">
+        <img class="gallerypics" src="img/7.png" alt="tech">
+        <img class="gallerypics" src="img/1.png" alt="tech">
+        <img class="gallerypics" src="img/3.png" alt="tech">
+        <img class="gallerypics" src="img/8.png" alt="tech">
+        <img class="gallerypics" src="img/5.png" alt="tech">
+        <img class="gallerypics" src="img/6.png" alt="tech">
+      </section>
+   
 
 
 
@@ -279,11 +283,37 @@
         <div class="loading">loading...</div>
 	
      
-        <button class="morecontent" id="load">More content</button>
+        
   </ol>
   </article>
-  
+  	<div class="buttonsRow">
+      <button id="signin" class="signin">Sign In</button>
+      <button id="comment" class="comment">Comment</button>
+    </div>
 
+  <div class="boxes">
+  <div id="modal" class="modal">
+    <form id="getstarted" class="getstarted">
+      <button type="button" id="close" class="close">x</button>
+      <input type="text" name="user" id="user" class="field error" placeholder="Username">
+      <input type="password" name="pass" id="pass" class="field error" placeholder="Password">
+      <button type="submit" id="submit" class="submit">Submit</button>
+    </form>
+  </div>
+
+    
+  <div id="commentshow" class="commentshow">
+    <form id="commentbox" class="commentbox">
+      <button type="button" id="close" class="closecomment">x</button>
+      <input type="textarea" class="textarea" placeholder="Your comments here...">		
+        <button type="submit" id="submit" class="submit">Submit</button>	
+      </form>
+  </div>
+
+</div>
+
+
+<button class="morecontent" id="load">More content</button>
 
 
   </main>
@@ -316,5 +346,7 @@
   
   </footer>
   <script src="js/index.js"></script>
+  <script src="js/loadthis.js"></script>
+  
 </body>
 </html>
